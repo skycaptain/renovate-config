@@ -1,0 +1,16 @@
+# Skycaptain: Renovate Config
+#
+# See https://mise.jdx.dev for usage.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+#
+[tools]
+biome = "2.5.15"
+pre-commit = "4.6.2"
+python = "3.15.0"
+
+[settings]
+lockfile = true
+
+[tasks."dev:check"]
+run = 'pre-commit run --all-files --verbose'

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [":automergeRequireAllStatusChecks"],
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true
+  },
+  "pin": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "matchManagers": ["pre-commit"],
+      "automerge": true
+    },
+    {
+      "matchManagers": ["git-submodules"],
+      "automerge": true
+    }
+  ]
+}

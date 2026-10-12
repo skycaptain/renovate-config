@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>skycaptain/renovate-config",
+    ":automergeAll",
+    "schedule:automergeEarlyMondays"
+  ],
+  "packageRules": [
+    {
+      "description": "Update Renovate packages weekly",
+      "matchPackageNames": ["ghcr.io/renovatebot/renovate", "renovatebot/pre-commit-hooks"],
+      "extends": ["schedule:weekly"]
+    },
+    {
+      "description": "Schedule digest updates for early Mondays",
+      "matchUpdateTypes": ["digest"],
+      "extends": ["schedule:earlyMondays"]
+    }
+  ]
+}

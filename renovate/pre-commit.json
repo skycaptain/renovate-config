@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [":enablePreCommit"],
+  "packageRules": [
+    {
+      "description": "Group all non-major pre-commit hook updates",
+      "extends": ["schedule:weekly"],
+      "groupName": "pre-commit hooks",
+      "matchFileNames": ["**/.pre-commit-config.yaml"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    }
+  ]
+}

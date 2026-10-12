@@ -1,0 +1,7 @@
+// Skycaptain: Renovate Config
+//
+// SPDX-License-Identifier: BSD-3-Clause
+//
+{
+  "recommendations": ["biomejs.biome", "editorconfig.editorconfig", "hverlin.mise-vscode"]
+}

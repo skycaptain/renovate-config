@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "description": "Group all third-party non-major Go module updates",
+      "groupName": "third-party go modules",
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["!/^github\\.com\\/skycaptain\\//"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "semanticCommitType": "fix"
+    }
+  ],
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
+}
