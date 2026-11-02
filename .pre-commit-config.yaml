@@ -50,7 +50,7 @@ repos:
   # JSON, YAML, TOML -------------------------------------------------------------------------------
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: "0.38.2"
+    rev: "0.39.0"
     hooks:
       - id: check-metaschema
         exclude: ^.vscode/
@@ -61,7 +61,7 @@ repos:
                 | ^renovate\/.*\.json$
             )$
   - repo: https://github.com/biomejs/pre-commit
-    rev: "v2.5.15"
+    rev: "v2.6.4"
     hooks:
       - id: biome-ci
         additional_dependencies: ["@biomejs/biome"]
@@ -69,7 +69,7 @@ repos:
   # Renovate ---------------------------------------------------------------------------------------
 
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: "44.171.5"
+    rev: "44.201.0"
     hooks:
       - id: renovate-config-validator
         args: ["--strict"]
