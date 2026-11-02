@@ -2,8 +2,10 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>skycaptain/renovate-config//renovate/best-practices",
+    "github>skycaptain/renovate-config//renovate/github-actions",
+    "github>skycaptain/renovate-config//renovate/golang",
     "github>skycaptain/renovate-config//renovate/mise",
-    "github>skycaptain/renovate-config//renovate/pre-commit",
-    "github>skycaptain/renovate-config//renovate/github-actions"
+    "github>skycaptain/renovate-config//renovate/npm",
+    "github>skycaptain/renovate-config//renovate/pre-commit"
   ]
 }
