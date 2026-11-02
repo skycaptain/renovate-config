@@ -5,9 +5,9 @@
 # SPDX-License-Identifier: BSD-3-Clause
 #
 [tools]
-biome = "2.5.15"
+biome = "2.6.4"
 pre-commit = "4.7.0"
-python = "3.15.0"
+python = "3.15.2"
 
 [settings]
 lockfile = true
